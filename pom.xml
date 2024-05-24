@@ -11,65 +11,7 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
 
-    <profiles>
-        <profile>
-            <id>tests_default</id>
-            <activation>
-                <activeByDefault>false</activeByDefault>
-            </activation>
-            <properties>
-                <suiteXmlFileName>tests_default</suiteXmlFileName>
-            </properties>
-        </profile>
-        <profile>
-            <id>grid</id>
-            <activation>
-                <activeByDefault>false</activeByDefault>
-            </activation>
-            <properties>
-                <suiteXmlFileName>tests_ui</suiteXmlFileName>
-            </properties>
-        </profile>
-        <profile>
-            <id>api</id>
-            <activation>
-                <activeByDefault>true</activeByDefault>
-            </activation>
-            <properties>
-                <suiteXmlFileName>tests_api</suiteXmlFileName>
-            </properties>
-        </profile>
-        <profile>
-            <id>aut_default</id>
-            <activation>
-                <activeByDefault>true</activeByDefault>
-            </activation>
-            <properties>
-                <config.location.aut>configuration/aut_default.xml</config.location.aut>
-            </properties>
-        </profile>
-        <profile>
-            <id>env_docker_selenoid</id>
-            <activation>
-                <property>
-                    <name>env.MAVEN_IN_DOCKER</name>
-                    <value>true</value>
-                </property>
-            </activation>
-            <properties>
-                <config.location.env>configuration/env_docker_selenoid.xml</config.location.env>
-            </properties>
-        </profile>
-        <profile>
-            <id>env_local</id>
-            <activation>
-                <activeByDefault>true</activeByDefault>
-            </activation>
-            <properties>
-                <config.location.env>configuration/env_local.xml</config.location.env>
-            </properties>
-        </profile>
-    </profiles>
+    
 
     <build>
         <plugins>
