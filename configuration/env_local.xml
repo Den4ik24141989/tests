@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+<properties>
+    <entry key="webUrl">http://localhost:8000/</entry>
+    <entry key="browserName">chrome</entry>
+    <entry key="remote">true</entry>
+    <entry key="seleniumUrl">http://localhost:4444/wd/hub</entry>
+    <entry key="pageLoadTimeout">10</entry>
+    <entry key="explicitTimeout">10</entry>
+    <entry key="implicitTimeout">5</entry>
+</properties>

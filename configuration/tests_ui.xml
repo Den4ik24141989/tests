@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="TestsUI">
+    <test name="TestsUI" parallel="classes" thread-count="3">
+        <classes>
+            <class name="tests.ui.PhaseControlTests" />
+            <class name="tests.ui.PhaseTaskManagementTests" />
+            <class name="tests.ui.LoginTests" />
+        </classes>
+    </test>
+</suite>

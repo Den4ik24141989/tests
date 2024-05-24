@@ -1,0 +1,300 @@
+{
+  "definitions": {},
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "id": "https://example.com/object1715173528.json",
+  "title": "Root",
+  "type": "object",
+  "properties": {
+    "status": {
+      "id": "#root/status",
+      "title": "status",
+      "type": "object",
+      "properties": {
+        "name": {
+          "id": "#root/status/name",
+          "title": "name",
+          "type": [
+            "string",
+            "null"
+          ],
+          "pattern": "^.*$"
+        },
+        "value": {
+          "id": "#root/status/value",
+          "title": "value",
+          "type": [
+            "string",
+            "null"
+          ],
+          "pattern": "^.*$"
+        },
+        "_id": {
+          "id": "#root/status/_id",
+          "title": "_id",
+          "type": "string",
+          "minLength": 1
+        }
+      }
+    },
+    "statistic": {
+      "id": "#root/statistic",
+      "title": "statistic",
+      "type": "object",
+      "properties": {
+        "workhoursPercents": {
+          "id": "#root/statistic/workhoursPercents",
+          "title": "workhoursPercents",
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 100
+        },
+        "maxHours": {
+          "id": "#root/statistic/maxHours",
+          "title": "maxHours",
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 100
+        },
+        "minHours": {
+          "id": "#root/statistic/minHours",
+          "title": "minHours",
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 100
+        },
+        "E95": {
+          "id": "#root/statistic/E95",
+          "title": "E95",
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 100
+        },
+        "E68": {
+          "id": "#root/statistic/E68",
+          "title": "E68",
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 100
+        },
+        "E50": {
+          "id": "#root/statistic/E50",
+          "title": "E50",
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 100
+        },
+        "reduced": {
+          "id": "#root/statistic/reduced",
+          "title": "reduced",
+          "type": "array",
+          "minItems": 0
+        }
+      }
+    },
+    "_id": {
+      "id": "#root/_id",
+      "title": "_id",
+      "type": "string",
+      "minLength": 1
+    },
+    "riskHistory": {
+      "id": "#root/_id",
+      "title": "riskHistory",
+      "type": "array",
+      "minItems": 0
+    },
+    "statusHistory": {
+      "id": "#root/statusHistory",
+      "title": "statusHistory",
+      "type": "array",
+      "minItems": 0,
+      "items": {
+        "id": "#root/statusHistory/items",
+        "title": "items",
+        "type": "object",
+        "properties": {
+          "status": {
+            "id": "#root/statusHistory/status",
+            "title": "status",
+            "type": "object",
+            "properties": {
+              "name": {
+                "id": "#root/statusHistory/status/name",
+                "type": [
+                  "string",
+                  "null"
+                ],
+                "pattern": "^.*$"
+              },
+              "value": {
+                "id": "#root/statusHistory/status/value",
+                "type": [
+                  "string",
+                  "null"
+                ],
+                "pattern": "^.*$"
+              },
+              "_id": {
+                "id": "#root/statusHistory/status/_id",
+                "type": "string",
+                "minLength": 1
+              }
+            }
+          },
+          "_id": {
+            "id": "#root/statusHistory/_id",
+            "title": "_id",
+            "type": "string",
+            "minLength": 1
+          },
+          "user": {
+            "id": "#root/statusHistory/user",
+            "title": "user",
+            "type": "object",
+            "properties": {
+              "_id": {
+                "id": "#root/statusHistory/user/_id",
+                "title": "_id",
+                "type": "string",
+                "minLength": 1
+              },
+              "name": {
+                "id": "#root/statusHistory/user/name",
+                "title": "name",
+                "type": [
+                  "string",
+                  "null"
+                ],
+                "pattern": "^.*$"
+              },
+              "role": {
+                "id": "#root/statusHistory/user/role",
+                "title": "role",
+                "type": "string",
+                "minLength": 1
+              }
+            }
+          },
+          "created": {
+            "id": "#root/statusHistory/created",
+            "title": "created",
+            "type": [
+              "string",
+              "null"
+            ],
+            "pattern": "^.*$"
+          }
+        }
+      }
+    },
+    "created" : {
+      "id": "#root/created",
+      "title": "created",
+      "type": [
+        "string",
+        "null"
+      ],
+      "pattern": "^.*$"
+    },
+    "linkToCRM" : {
+      "id": "#root/linkToCRM",
+      "title": "linkToCRM",
+      "type": [
+        "string",
+        "null"
+      ],
+      "pattern": "^.*$"
+    },
+    "phases" : {
+      "id": "#root/phases",
+      "title": "phases",
+      "type": "array",
+      "minItems": 0
+    },
+    "risk": {
+      "id": "#root/risk",
+      "title": "risk",
+      "type": "integer",
+      "minimum": 0,
+      "maximum": 100
+    },
+    "useOfStandart": {
+      "id": "#root/useOfStandart",
+      "title": "useOfStandart",
+      "type": "integer",
+      "minimum": 0,
+      "maximum": 100
+    },
+    "files": {
+      "id": "#root/files",
+      "title": "files",
+      "type": "array",
+      "minItems": 0
+    },
+    "departments": {
+      "id": "#root/departments",
+      "title": "departments",
+      "type": "array",
+      "minItems": 0
+    },
+    "approvers": {
+      "id": "#root/approvers",
+      "title": "approvers",
+      "type": "array",
+      "minItems": 0
+    },
+    "managers": {
+      "id": "#root/managers",
+      "title": "managers",
+      "type": "array",
+      "minItems": 0
+    },
+    "locale": {
+      "id": "#root/locale",
+      "title": "locale",
+      "type": [
+        "string",
+        "null"
+      ],
+      "pattern": "^.*$"
+    },
+    "authors": {
+      "id": "#root/locale",
+      "title": "locale",
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "id": "#root/authors/items",
+        "title": "items",
+        "type": [
+          "string",
+          "null"
+        ],
+        "pattern": "^.*$"
+      }
+    },
+    "isLocked": {
+      "id": "#root/isLocked",
+      "title": "isLocked",
+      "type": "boolean"
+    },
+    "description": {
+      "id": "#root/description",
+      "title": "description",
+      "type": [
+        "string",
+        "null"
+      ],
+      "pattern": "^.*$"
+    },
+    "name": {
+      "id": "#root/name",
+      "title": "name",
+      "type": [
+        "string",
+        "null"
+      ],
+      "pattern": "^.*$"
+    }
+  }
+}

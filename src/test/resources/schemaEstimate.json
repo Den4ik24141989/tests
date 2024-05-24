@@ -1,0 +1,310 @@
+{
+  "definitions": {},
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "id": "https://example.com/object1715173528.json",
+  "title": "Root",
+  "type": "object",
+  "properties": {
+    "status": {
+      "id": "#root/status",
+      "title": "Status",
+      "type": "object",
+      "properties": {
+        "name": {
+          "id": "#root/status/name",
+          "title": "Name",
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 20,
+          "default": "",
+          "pattern": "^.*$"
+        },
+        "value": {
+          "id": "#root/status/value",
+          "title": "Value",
+          "type": "string",
+          "default": "",
+          "pattern": "^.*$"
+        },
+        "_id": {
+          "id": "#root/status/_id",
+          "title": "_id",
+          "type": "string",
+          "default": "",
+          "pattern": "^.*$"
+        }
+      }
+    },
+    "originalId": {
+      "id": "#root/originalId",
+      "title": "originalId",
+      "type": "string"
+    },
+    "statistic": {
+      "id": "#root/statistic",
+      "title": "Statistic",
+      "type": "object",
+      "properties": {
+        "workhoursPercents": {
+          "id": "#root/statistic/workhoursPercents",
+          "title": "Workhourspercents",
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 100,
+          "default": 0
+        },
+        "maxHours": {
+          "id": "#root/statistic/maxHours",
+          "title": "Maxhours",
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 100,
+          "default": 0
+        },
+        "minHours": {
+          "id": "#root/statistic/minHours",
+          "title": "Minhours",
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 100,
+          "default": 0
+        },
+        "E95": {
+          "id": "#root/statistic/E95",
+          "title": "E95",
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 100,
+          "default": 0
+        },
+        "E68": {
+          "id": "#root/statistic/E68",
+          "title": "E68",
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 100,
+          "default": 0
+        },
+        "E50": {
+          "id": "#root/statistic/E50",
+          "title": "E50",
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 100,
+          "default": 0
+        },
+        "reduced": {
+          "id": "#root/statistic/reduced",
+          "title": "Reduced",
+          "type": "array",
+          "default": []
+        }
+      }
+    },
+    "_id": {
+      "id": "#root/_id",
+      "title": "_id",
+      "type": "string",
+      "default": "",
+      "pattern": "^.*$"
+    },
+    "riskHistory": {
+      "id": "#root/riskHistory",
+      "title": "Riskhistory",
+      "type": "array",
+      "default": []
+    },
+    "statusHistory": {
+      "id": "#root/statusHistory",
+      "title": "Statushistory",
+      "type": "array",
+      "default": [],
+      "items": {
+        "id": "#root/statusHistory/items",
+        "title": "Items",
+        "type": "object",
+        "properties": {
+          "status": {
+            "id": "#root/statusHistory/items/status",
+            "title": "Status",
+            "type": "object",
+            "properties": {
+              "_id": {
+                "id": "#root/statusHistory/items/status/_id",
+                "title": "_id",
+                "type": "string",
+                "default": "",
+                "pattern": "^.*$"
+              },
+              "value": {
+                "id": "#root/statusHistory/items/status/value",
+                "title": "Value",
+                "type": "string",
+                "default": "",
+                "pattern": "^.*$"
+              },
+              "name": {
+                "id": "#root/statusHistory/items/status/name",
+                "title": "Name",
+                "type": "string",
+                "default": "",
+                "pattern": "^.*$"
+              }
+            }
+          },
+          "_id": {
+            "id": "#root/statusHistory/items/_id",
+            "title": "_id",
+            "type": "string",
+            "default": "",
+            "pattern": "^.*$"
+          },
+          "user": {
+            "id": "#root/statusHistory/items/user",
+            "title": "User",
+            "type": "object",
+            "properties": {
+              "_id": {
+                "id": "#root/statusHistory/items/user/_id",
+                "title": "_id",
+                "type": "string",
+                "default": "",
+                "pattern": "^.*$"
+              },
+              "name": {
+                "id": "#root/statusHistory/items/user/name",
+                "title": "Name",
+                "type": "string",
+                "default": "",
+                "pattern": "^.*$"
+              },
+              "role": {
+                "id": "#root/statusHistory/items/user/role",
+                "title": "Role",
+                "type": "string",
+                "default": "",
+                "pattern": "^.*$"
+              }
+            }
+          },
+          "created": {
+            "id": "#root/statusHistory/items/created",
+            "title": "Created",
+            "type": "string",
+            "default": "",
+            "pattern": "^.*$"
+          }
+        }
+      }
+    },
+    "created": {
+      "id": "#root/created",
+      "title": "Created",
+      "type": "string",
+      "default": "",
+      "pattern": "^.*$"
+    },
+    "linkToCRM": {
+      "id": "#root/linkToCRM",
+      "title": "Linktocrm",
+      "type": [
+        "string",
+        "null"
+      ],
+      "default": "string"
+    },
+    "phases": {
+      "id": "#root/phases",
+      "title": "Phases",
+      "type": "array",
+      "default": []
+    },
+    "risk": {
+      "id": "#root/risk",
+      "title": "Risk",
+      "type": "integer",
+      "minimum": 0,
+      "maximum": 100,
+      "default": 0
+    },
+    "useOfStandart": {
+      "id": "#root/useOfStandart",
+      "title": "Useofstandart",
+      "type": "integer",
+      "minimum": 0,
+      "maximum": 100,
+      "default": 0
+    },
+    "files": {
+      "id": "#root/files",
+      "title": "Files",
+      "type": "array",
+      "default": []
+    },
+    "departments": {
+      "id": "#root/departments",
+      "title": "Departments",
+      "type": "array",
+      "default": []
+    },
+    "approvers": {
+      "id": "#root/approvers",
+      "title": "Approvers",
+      "type": "array",
+      "default": []
+    },
+    "managers": {
+      "id": "#root/managers",
+      "title": "Managers",
+      "type": "array",
+      "default": []
+    },
+    "locale": {
+      "id": "#root/locale",
+      "title": "Locale",
+      "type": "string",
+      "default": "",
+      "pattern": "^.*$"
+    },
+    "authors": {
+      "id": "#root/authors",
+      "title": "Authors",
+      "type": "array",
+      "default": [],
+      "items": {
+        "id": "#root/authors/items",
+        "title": "Items",
+        "type": [
+          "string",
+          "object"
+        ],
+        "default": "",
+        "pattern": "^.*$"
+      }
+    },
+    "isLocked": {
+      "id": "#root/isLocked",
+      "title": "Islocked",
+      "type": "boolean",
+      "default": true
+    },
+    "description": {
+      "id": "#root/description",
+      "title": "Description",
+      "type": [
+        "string",
+        "null"
+      ],
+      "default": "string"
+    },
+    "name": {
+      "id": "#root/name",
+      "title": "Name",
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 20,
+      "default": "",
+      "pattern": "^.*$"
+    }
+  }
+}

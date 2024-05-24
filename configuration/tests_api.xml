@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="TestsAPI">
+    <test name="TestsAPI" parallel="classes" thread-count="4">
+        <classes>
+            <class name="tests.api.LoginPageTest" />
+            <class name="tests.api.ChangingUserRoleTest" />
+            <class name="tests.api.A2Tests" />
+            <class name="tests.api.PhaseControlTests" />
+        </classes>
+    </test>
+</suite>
